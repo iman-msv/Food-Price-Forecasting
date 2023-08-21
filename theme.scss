@@ -1,0 +1,34 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+
+/*-- scss:defaults --*/
+// Font Variable
+$rubik: 'Rubik', sans-serif;
+$primary-color: #005354;
+$toc-color: #006969;
+$toc-active-border: #008080;
+$toc-inactive-border: #006969;
+
+/*-- scss:rules --*/
+// Styles
+h1, h2, h3, h4, h5, h5 {
+  font-family: $rubik;
+  font-weight: bold;
+  color: $primary-color;
+}
+
+.header-section-number {
+  font-family: $rubik;
+  font-weight: bold;
+  color: $primary-color !important; 
+}
+
+.content {
+  font-family: $rubik;
+  font-weight: normal;
+}
+
+.sidebar {
+  font-family: $rubik;
+  font-weight: normal;
+}
