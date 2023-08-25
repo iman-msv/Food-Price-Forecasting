@@ -81,6 +81,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#importing-important-price-data" id="toc-importing-important-price-data" class="nav-link active" data-scroll-target="#importing-important-price-data">1. Importing important price data</a></li>
+  <li><a href="#once-more-with-feeling" id="toc-once-more-with-feeling" class="nav-link" data-scroll-target="#once-more-with-feeling">2. Once more, with feeling</a></li>
+  <li><a href="#spring-cleaning" id="toc-spring-cleaning" class="nav-link" data-scroll-target="#spring-cleaning">3. Spring cleaning</a></li>
+  <li><a href="#potatoes-are-not-a-balanced-diet" id="toc-potatoes-are-not-a-balanced-diet" class="nav-link" data-scroll-target="#potatoes-are-not-a-balanced-diet">4. Potatoes are not a balanced diet</a></li>
   </ul>
 </nav>
 </div>
@@ -120,26 +123,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <p>In this quarto file, we’re going to import, manipulate, visualize and forecast Rwandan potato price data. We’ll also wrap our analysis into functions to make it easy to analyze prices of other foods.</p>
-<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Head of Data set_7696cacb05eb8c3068eedfd0702bcdf7">
+<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Head of Data set_f06a7a69cc87d551786a737e7f818867">
 <div class="cell-output-display">
 
-<div id="iytbdnuhsy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#iytbdnuhsy table {
+<div id="ationziaew" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ationziaew table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#iytbdnuhsy thead, #iytbdnuhsy tbody, #iytbdnuhsy tfoot, #iytbdnuhsy tr, #iytbdnuhsy td, #iytbdnuhsy th {
+#ationziaew thead, #ationziaew tbody, #ationziaew tfoot, #ationziaew tr, #ationziaew td, #ationziaew th {
   border-style: none;
 }
 
-#iytbdnuhsy p {
+#ationziaew p {
   margin: 0;
   padding: 0;
 }
 
-#iytbdnuhsy .gt_table {
+#ationziaew .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -165,12 +168,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_caption {
+#ationziaew .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#iytbdnuhsy .gt_title {
+#ationziaew .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -182,7 +185,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#iytbdnuhsy .gt_subtitle {
+#ationziaew .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -194,7 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#iytbdnuhsy .gt_heading {
+#ationziaew .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -206,13 +209,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_bottom_border {
+#ationziaew .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_col_headings {
+#ationziaew .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -227,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_col_heading {
+#ationziaew .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -247,7 +250,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#iytbdnuhsy .gt_column_spanner_outer {
+#ationziaew .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -259,15 +262,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#iytbdnuhsy .gt_column_spanner_outer:first-child {
+#ationziaew .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#iytbdnuhsy .gt_column_spanner_outer:last-child {
+#ationziaew .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#iytbdnuhsy .gt_column_spanner {
+#ationziaew .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -279,11 +282,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#iytbdnuhsy .gt_spanner_row {
+#ationziaew .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#iytbdnuhsy .gt_group_heading {
+#ationziaew .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -309,7 +312,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#iytbdnuhsy .gt_empty_group_heading {
+#ationziaew .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -324,15 +327,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#iytbdnuhsy .gt_from_md > :first-child {
+#ationziaew .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#iytbdnuhsy .gt_from_md > :last-child {
+#ationziaew .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#iytbdnuhsy .gt_row {
+#ationziaew .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -351,7 +354,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#iytbdnuhsy .gt_stub {
+#ationziaew .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -364,7 +367,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#iytbdnuhsy .gt_stub_row_group {
+#ationziaew .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -378,15 +381,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#iytbdnuhsy .gt_row_group_first td {
+#ationziaew .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#iytbdnuhsy .gt_row_group_first th {
+#ationziaew .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#iytbdnuhsy .gt_summary_row {
+#ationziaew .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -396,16 +399,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#iytbdnuhsy .gt_first_summary_row {
+#ationziaew .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_first_summary_row.thick {
+#ationziaew .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#iytbdnuhsy .gt_last_summary_row {
+#ationziaew .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -415,7 +418,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_grand_summary_row {
+#ationziaew .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -425,7 +428,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#iytbdnuhsy .gt_first_grand_summary_row {
+#ationziaew .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -435,7 +438,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_last_grand_summary_row_top {
+#ationziaew .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -445,11 +448,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_striped {
+#ationziaew .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#iytbdnuhsy .gt_table_body {
+#ationziaew .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -458,7 +461,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_footnotes {
+#ationziaew .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -472,7 +475,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_footnote {
+#ationziaew .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -481,7 +484,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#iytbdnuhsy .gt_sourcenotes {
+#ationziaew .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -495,7 +498,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#iytbdnuhsy .gt_sourcenote {
+#ationziaew .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -503,63 +506,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#iytbdnuhsy .gt_left {
+#ationziaew .gt_left {
   text-align: left;
 }
 
-#iytbdnuhsy .gt_center {
+#ationziaew .gt_center {
   text-align: center;
 }
 
-#iytbdnuhsy .gt_right {
+#ationziaew .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#iytbdnuhsy .gt_font_normal {
+#ationziaew .gt_font_normal {
   font-weight: normal;
 }
 
-#iytbdnuhsy .gt_font_bold {
+#ationziaew .gt_font_bold {
   font-weight: bold;
 }
 
-#iytbdnuhsy .gt_font_italic {
+#ationziaew .gt_font_italic {
   font-style: italic;
 }
 
-#iytbdnuhsy .gt_super {
+#ationziaew .gt_super {
   font-size: 65%;
 }
 
-#iytbdnuhsy .gt_footnote_marks {
+#ationziaew .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#iytbdnuhsy .gt_asterisk {
+#ationziaew .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#iytbdnuhsy .gt_indent_1 {
+#ationziaew .gt_indent_1 {
   text-indent: 5px;
 }
 
-#iytbdnuhsy .gt_indent_2 {
+#ationziaew .gt_indent_2 {
   text-indent: 10px;
 }
 
-#iytbdnuhsy .gt_indent_3 {
+#ationziaew .gt_indent_3 {
   text-indent: 15px;
 }
 
-#iytbdnuhsy .gt_indent_4 {
+#ationziaew .gt_indent_4 {
   text-indent: 20px;
 }
 
-#iytbdnuhsy .gt_indent_5 {
+#ationziaew .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -701,6 +704,556 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 </table>
 </div>
+</div>
+</div>
+</section>
+<section id="once-more-with-feeling" class="level1">
+<h1>2. Once more, with feeling</h1>
+<p>Many of the columns in the potato data aren’t very useful for our analysis. For example, the adm1_name column is always “Rwanda”, and cur_name is always “RWF”. (This is short for Rwandan Franc; for context, 1000 RWF is a little over 1 USD.) Similarly, we don’t really need any of the ID columns or the data source.</p>
+<p>Even the columns we do need have slightly obscure names. For example, adm1_id isn’t as clear as region, and mkt_name isn’t as clear as market. One of the most types of data analysis disaster is to misunderstand what a variable means, so naming variable clearly is a useful way to avoid this. One trick is that any variable that includes a unit should include that unit in the variable name. Here, the prices are given in Rwandan Francs, so price_rwf is a good name.</p>
+<p>The new structure is as follows:</p>
+<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Glimpse_60c18e28e6c5d3ab427fcd53a9ae4aac">
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 4,320
+Columns: 6
+$ region       &lt;chr&gt; "$West/Iburengerazuba", "$West/Iburengerazuba", "$West/Ib…
+$ market       &lt;chr&gt; "Birambo", "Birambo", "Birambo", "Birambo", "Birambo", "B…
+$ commodity_kg &lt;chr&gt; "Potatoes (Irish)", "Potatoes (Irish)", "Potatoes (Irish)…
+$ month_col    &lt;dbl&gt; 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4…
+$ year_col     &lt;dbl&gt; 2010, 2010, 2011, 2011, 2011, 2011, 2011, 2011, 2011, 201…
+$ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5000,…</code></pre>
+</div>
+</div>
+</section>
+<section id="spring-cleaning" class="level1">
+<h1>3. Spring cleaning</h1>
+<p>As is often the case in a data analysis, the data we are given isn’t in quite the form we’d like it to be. For example, in the last task the month and year were given as integers. Since we’ll be performing some time series analysis, it would be helpful if they were provided as dates. Before we can analyze the data, we need to spring clean it.</p>
+<div class="cell" data-hash="Food-Price-Forecasting_cache/html/First Rows after Date Creation_db1b85f7ad32017c54f50ac4c9931309">
+<div class="cell-output-display">
+
+<div id="xldsyvauvo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xldsyvauvo table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#xldsyvauvo thead, #xldsyvauvo tbody, #xldsyvauvo tfoot, #xldsyvauvo tr, #xldsyvauvo td, #xldsyvauvo th {
+  border-style: none;
+}
+
+#xldsyvauvo p {
+  margin: 0;
+  padding: 0;
+}
+
+#xldsyvauvo .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#xldsyvauvo .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#xldsyvauvo .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#xldsyvauvo .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#xldsyvauvo .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#xldsyvauvo .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#xldsyvauvo .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#xldsyvauvo .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#xldsyvauvo .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#xldsyvauvo .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#xldsyvauvo .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#xldsyvauvo .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#xldsyvauvo .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#xldsyvauvo .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#xldsyvauvo .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xldsyvauvo .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#xldsyvauvo .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#xldsyvauvo .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#xldsyvauvo .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xldsyvauvo .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#xldsyvauvo .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xldsyvauvo .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#xldsyvauvo .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xldsyvauvo .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#xldsyvauvo .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xldsyvauvo .gt_left {
+  text-align: left;
+}
+
+#xldsyvauvo .gt_center {
+  text-align: center;
+}
+
+#xldsyvauvo .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#xldsyvauvo .gt_font_normal {
+  font-weight: normal;
+}
+
+#xldsyvauvo .gt_font_bold {
+  font-weight: bold;
+}
+
+#xldsyvauvo .gt_font_italic {
+  font-style: italic;
+}
+
+#xldsyvauvo .gt_super {
+  font-size: 65%;
+}
+
+#xldsyvauvo .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#xldsyvauvo .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#xldsyvauvo .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#xldsyvauvo .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#xldsyvauvo .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#xldsyvauvo .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#xldsyvauvo .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="region">region</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="market">market</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="commodity_kg">commodity_kg</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="price_rwf">price_rwf</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="date">date</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="market" class="gt_row gt_left">Birambo</td>
+<td headers="commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="price_rwf" class="gt_row gt_right">157.0000</td>
+<td headers="date" class="gt_row gt_right">2010-11-01</td></tr>
+    <tr><td headers="region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="market" class="gt_row gt_left">Birambo</td>
+<td headers="commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="price_rwf" class="gt_row gt_right">133.3333</td>
+<td headers="date" class="gt_row gt_right">2010-12-01</td></tr>
+    <tr><td headers="region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="market" class="gt_row gt_left">Birambo</td>
+<td headers="commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="price_rwf" class="gt_row gt_right">96.5000</td>
+<td headers="date" class="gt_row gt_right">2011-01-01</td></tr>
+    <tr><td headers="region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="market" class="gt_row gt_left">Birambo</td>
+<td headers="commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="price_rwf" class="gt_row gt_right">97.0000</td>
+<td headers="date" class="gt_row gt_right">2011-02-01</td></tr>
+    <tr><td headers="region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="market" class="gt_row gt_left">Birambo</td>
+<td headers="commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="price_rwf" class="gt_row gt_right">107.8000</td>
+<td headers="date" class="gt_row gt_right">2011-03-01</td></tr>
+    <tr><td headers="region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="market" class="gt_row gt_left">Birambo</td>
+<td headers="commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="price_rwf" class="gt_row gt_right">125.5000</td>
+<td headers="date" class="gt_row gt_right">2011-04-01</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Glimpse after Date Creation_c9f32dd79ea031dc9442409cc05033f0">
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 4,320
+Columns: 5
+Rowwise: 
+$ region       &lt;chr&gt; "$West/Iburengerazuba", "$West/Iburengerazuba", "$West/Ib…
+$ market       &lt;chr&gt; "Birambo", "Birambo", "Birambo", "Birambo", "Birambo", "B…
+$ commodity_kg &lt;chr&gt; "Potatoes (Irish)", "Potatoes (Irish)", "Potatoes (Irish)…
+$ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5000,…
+$ date         &lt;date&gt; 2010-11-01, 2010-12-01, 2011-01-01, 2011-02-01, 2011-03-…</code></pre>
+</div>
+</div>
+</section>
+<section id="potatoes-are-not-a-balanced-diet" class="level1">
+<h1>4. Potatoes are not a balanced diet</h1>
+<p>As versatile as potatoes are, with their ability to be boiled, roasted, mashed, fried, or chipped, the people of Rwanda have more varied culinary tastes. That means you are going to have to look at some other food types!</p>
+<p>If we want to do a similar task many times, we could just cut and paste our code and change bits here and there. This is a terrible idea, since changing code in one place doesn’t keep it up to date in the other places, and we quickly end up with lots of bugs.</p>
+<p>A better idea is to write a function. That way we avoid cut and paste errors and can have more readable code.</p>
+<p>To test our function, we attempt to import a new data set called pea_prices. The structure of the new data file is similar to the potatos data set, but the records belong to prices of peas.</p>
+<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Peas Data_b1e970fc9211eb1ab0f6e77ead12a9d1">
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 1,893
+Columns: 5
+$ region                          &lt;chr&gt; "$West/Iburengerazuba", "$West/Ibureng…
+$ market                          &lt;chr&gt; "Birambo", "Birambo", "Birambo", "Bira…
+$ commodity_kg                    &lt;chr&gt; "Peas (fresh)", "Peas (fresh)", "Peas …
+$ price_rwf                       &lt;dbl&gt; 403.5000, 380.0000, 277.5000, 450.0000…
+$ `ymd(paste(year, month, "01"))` &lt;date&gt; 2011-01-01, 2011-02-01, 2011-04-01, 2…</code></pre>
+</div>
+</div>
+<p><strong>Nice!</strong> # 5. Plotting the price of potatoes A great first step in any data analysis is to look at the data. In this case, we have some prices, and we have some dates, so the obvious thing to do is to see how those prices change over time.</p>
+<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Prices Over Time Plot_a423c8ee5beb357284c524baa047e527">
+<div class="cell-output-display">
+<p><img src="Food-Price-Forecasting_files/figure-html/Prices%20Over%20Time%20Plot-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <!-- -->
@@ -993,50 +1546,144 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Food Price Forecasting"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Iman Mousavi"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: false</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  cache: true</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">theme:</span><span class="co"> theme.scss</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">toc-title:</span><span class="co"> Sections</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="an">code-link:</span><span class="co"> true</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="an">code-fold:</span><span class="co"> show</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">code-tools:</span><span class="co"> true</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="an">highlight-style:</span><span class="co"> github</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1. Importing important price data</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Every time I go to the supermarket, my wallet weeps a little. But how expensive is food around the world? In this notebook, we'll explore time series of food prices in Rwanda from the <span class="co">[</span><span class="ot">United Nations Humanitarian Data Exchange Global Food Price Database</span><span class="co">](https://data.humdata.org/dataset/wfp-food-prices)</span>. Agriculture makes up over 30% of Rwanda's economy, and over 60% of its export earnings (CIA World Factbook), so the price of food is very important to the livelihood of many Rwandans.</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>The map below shows the layout of Rwanda; it is split into five administrative regions. The central area around the Capital city, Kigali, is one region, and the others are North, East, South, and West.</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="al">![Rwanda Map](RwandaGeoProvinces.png)</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>In this quarto file, we're going to import, manipulate, visualize and forecast Rwandan potato price data. We'll also wrap our analysis into functions to make it easy to analyze prices of other foods.</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Packages}</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(pacman)) {</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"pacman"</span>)</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(pacman)</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">p_load</span>(readr, dplyr, gt)</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Data Import}</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>potatp_prices <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Potatoes+(Irish).csv"</span>)</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Head of Data set}</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(potatp_prices) <span class="sc">|&gt;</span> </span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Food Price Forecasting"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Iman Mousavi"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: false</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">  cache: true</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="an">theme:</span><span class="co"> theme.scss</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="an">toc-title:</span><span class="co"> Sections</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="an">code-link:</span><span class="co"> true</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="an">code-fold:</span><span class="co"> show</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="an">code-tools:</span><span class="co"> true</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="an">highlight-style:</span><span class="co"> github</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1. Importing important price data</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>Every time I go to the supermarket, my wallet weeps a little. But how expensive is food around the world? In this notebook, we'll explore time series of food prices in Rwanda from the <span class="co">[</span><span class="ot">United Nations Humanitarian Data Exchange Global Food Price Database</span><span class="co">](https://data.humdata.org/dataset/wfp-food-prices)</span>. Agriculture makes up over 30% of Rwanda's economy, and over 60% of its export earnings (CIA World Factbook), so the price of food is very important to the livelihood of many Rwandans.</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>The map below shows the layout of Rwanda; it is split into five administrative regions. The central area around the Capital city, Kigali, is one region, and the others are North, East, South, and West.</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="al">![Rwanda Map](RwandaGeoProvinces.png)</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>In this quarto file, we're going to import, manipulate, visualize and forecast Rwandan potato price data. We'll also wrap our analysis into functions to make it easy to analyze prices of other foods.</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Packages}</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(pacman)) {</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"pacman"</span>)</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(pacman)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="fu">p_load</span>(readr, dplyr, lubridate, ggplot2, gt)</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Data Import}</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>potato_prices <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Potatoes+(Irish).csv"</span>)</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Head of Data set}</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(potato_prices) <span class="sc">|&gt;</span> </span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a><span class="fu"># 2. Once more, with feeling</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>Many of the columns in the potato data aren't very useful for our analysis. For example, the adm1_name column is always "Rwanda", and cur_name is always "RWF". (This is short for Rwandan Franc; for context, 1000 RWF is a little over 1 USD.) Similarly, we don't really need any of the ID columns or the data source.</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>Even the columns we do need have slightly obscure names. For example, adm1_id isn't as clear as region, and mkt_name isn't as clear as market. One of the most types of data analysis disaster is to misunderstand what a variable means, so naming variable clearly is a useful way to avoid this. One trick is that any variable that includes a unit should include that unit in the variable name. Here, the prices are given in Rwandan Francs, so price_rwf is a good name.</span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Select and Rename Interested Columns}</span></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>potato_prices <span class="ot">&lt;-</span> potato_prices <span class="sc">|&gt;</span> </span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(adm1_name, mkt_name, cm_name, mp_month, mp_year, mp_price) <span class="sc">|&gt;</span> </span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="fu">c</span>(<span class="at">region =</span> adm1_name, <span class="at">market =</span> mkt_name, <span class="at">commodity_kg =</span> cm_name, </span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>           <span class="at">month_col =</span> mp_month, <span class="at">year_col =</span> mp_year, </span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>           <span class="at">price_rwf =</span> mp_price))</span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>The new structure is as follows:</span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Glimpse}</span></span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(potato_prices)</span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a><span class="fu"># 3. Spring cleaning</span></span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>As is often the case in a data analysis, the data we are given isn't in quite the form we'd like it to be. For example, in the last task the month and year were given as integers. Since we'll be performing some time series analysis, it would be helpful if they were provided as dates. Before we can analyze the data, we need to spring clean it.</span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Date Column}</span></span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>potato_prices <span class="ot">&lt;-</span> potato_prices <span class="sc">|&gt;</span> </span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">date =</span> <span class="fu">make_date</span>(year_col, month_col)) <span class="sc">|&gt;</span> </span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(year_col, month_col))</span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a><span class="in">```{r First Rows after Date Creation}</span></span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>potato_prices <span class="sc">|&gt;</span> </span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Glimpse after Date Creation}</span></span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(potato_prices)</span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a><span class="fu"># 4. Potatoes are not a balanced diet</span></span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>As versatile as potatoes are, with their ability to be boiled, roasted, mashed, fried, or chipped, the people of Rwanda have more varied culinary tastes. That means you are going to have to look at some other food types!</span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>If we want to do a similar task many times, we could just cut and paste our code and change bits here and there. This is a terrible idea, since changing code in one place doesn't keep it up to date in the other places, and we quickly end up with lots of bugs.</span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>A better idea is to write a function. That way we avoid cut and paste errors and can have more readable code.</span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Function}</span></span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a>read_price_data <span class="ot">&lt;-</span> <span class="cf">function</span>(commodity) {</span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>  file_path <span class="ot">&lt;-</span> <span class="fu">paste</span>(commodity, <span class="st">".csv"</span>, <span class="at">sep =</span> <span class="st">""</span>)</span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a>  tb_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(</span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>    file_path,</span>
+<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>    <span class="at">col_types =</span> <span class="fu">cols_only</span>(</span>
+<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a>      <span class="at">adm1_name =</span> <span class="fu">col_character</span>(),</span>
+<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a>      <span class="at">mkt_name =</span> <span class="fu">col_character</span>(),</span>
+<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a>      <span class="at">cm_name =</span> <span class="fu">col_character</span>(),</span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>      <span class="at">mp_month =</span> <span class="fu">col_integer</span>(),</span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>      <span class="at">mp_year =</span> <span class="fu">col_integer</span>(),</span>
+<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a>      <span class="at">mp_price =</span> <span class="fu">col_double</span>()</span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>  tb_data <span class="ot">&lt;-</span> tb_data <span class="sc">|&gt;</span> </span>
+<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
+<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>      <span class="at">region =</span> adm1_name, </span>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>      <span class="at">market =</span> mkt_name,</span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>      <span class="at">commodity_kg =</span> cm_name,</span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a>      <span class="at">month =</span> mp_month,</span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a>      <span class="at">year =</span> mp_year,</span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a>      <span class="at">price_rwf =</span> mp_price</span>
+<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a>  tb_data <span class="ot">&lt;-</span> tb_data <span class="sc">|&gt;</span> </span>
+<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="fu">ymd</span>(<span class="fu">paste</span>(year, month, <span class="st">"01"</span>))) <span class="sc">|&gt;</span> </span>
+<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>month, <span class="sc">-</span>year)</span>
+<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a>To test our function, we attempt to import a new data set called pea_prices. The structure of the new data file is similar to the potatos data set, but the records belong to prices of peas.</span>
+<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Peas Data}</span></span>
+<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a>pea_prices <span class="ot">&lt;-</span> <span class="fu">read_price_data</span>(<span class="st">"Peas+(fresh)"</span>)</span>
+<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(pea_prices)</span>
+<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a>**Nice!**</span>
+<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a><span class="fu"># 5. Plotting the price of potatoes</span></span>
+<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a>A great first step in any data analysis is to look at the data. In this case, we have some prices, and we have some dates, so the obvious thing to do is to see how those prices change over time.</span>
+<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Prices Over Time Plot}</span></span>
+<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a>potato_prices <span class="sc">|&gt;</span> </span>
+<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> price_rwf, <span class="at">group =</span> market)) <span class="sc">+</span> </span>
+<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span> </span>
+<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, <span class="at">y =</span> <span class="st">"Price"</span>, <span class="at">title =</span> <span class="st">"Potato price over time"</span>)</span>
+<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

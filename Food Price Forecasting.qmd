@@ -30,16 +30,113 @@ if (!require(pacman)) {
   library(pacman)
 }
 
-p_load(readr, dplyr, gt)
+p_load(readr, dplyr, lubridate, ggplot2, gt)
 ```
 
 ```{r Data Import}
-potatp_prices <- read_csv("Potatoes+(Irish).csv")
+potato_prices <- read_csv("Potatoes+(Irish).csv")
 ```
 
 ```{r Head of Data set}
-head(potatp_prices) |> 
+head(potato_prices) |> 
   gt()
 ```
+
+# 2. Once more, with feeling
+Many of the columns in the potato data aren't very useful for our analysis. For example, the adm1_name column is always "Rwanda", and cur_name is always "RWF". (This is short for Rwandan Franc; for context, 1000 RWF is a little over 1 USD.) Similarly, we don't really need any of the ID columns or the data source.
+
+Even the columns we do need have slightly obscure names. For example, adm1_id isn't as clear as region, and mkt_name isn't as clear as market. One of the most types of data analysis disaster is to misunderstand what a variable means, so naming variable clearly is a useful way to avoid this. One trick is that any variable that includes a unit should include that unit in the variable name. Here, the prices are given in Rwandan Francs, so price_rwf is a good name.
+
+```{r Select and Rename Interested Columns}
+potato_prices <- potato_prices |> 
+  select(adm1_name, mkt_name, cm_name, mp_month, mp_year, mp_price) |> 
+  rename(c(region = adm1_name, market = mkt_name, commodity_kg = cm_name, 
+           month_col = mp_month, year_col = mp_year, 
+           price_rwf = mp_price))
+```
+
+The new structure is as follows:
+
+```{r Glimpse}
+glimpse(potato_prices)
+```
+
+# 3. Spring cleaning
+As is often the case in a data analysis, the data we are given isn't in quite the form we'd like it to be. For example, in the last task the month and year were given as integers. Since we'll be performing some time series analysis, it would be helpful if they were provided as dates. Before we can analyze the data, we need to spring clean it.
+
+```{r Date Column}
+potato_prices <- potato_prices |> 
+  rowwise() |> 
+  mutate(date = make_date(year_col, month_col)) |> 
+  select(-c(year_col, month_col))
+```
+
+```{r First Rows after Date Creation}
+potato_prices |> 
+  head() |> 
+  gt()
+```
+
+```{r Glimpse after Date Creation}
+glimpse(potato_prices)
+```
+
+# 4. Potatoes are not a balanced diet
+As versatile as potatoes are, with their ability to be boiled, roasted, mashed, fried, or chipped, the people of Rwanda have more varied culinary tastes. That means you are going to have to look at some other food types!
+
+If we want to do a similar task many times, we could just cut and paste our code and change bits here and there. This is a terrible idea, since changing code in one place doesn't keep it up to date in the other places, and we quickly end up with lots of bugs.
+
+A better idea is to write a function. That way we avoid cut and paste errors and can have more readable code.
+
+```{r Function}
+read_price_data <- function(commodity) {
+  file_path <- paste(commodity, ".csv", sep = "")
+  tb_data <- read_csv(
+    file_path,
+    col_types = cols_only(
+      adm1_name = col_character(),
+      mkt_name = col_character(),
+      cm_name = col_character(),
+      mp_month = col_integer(),
+      mp_year = col_integer(),
+      mp_price = col_double()
+    )
+  )
+  
+  tb_data <- tb_data |> 
+    rename(
+      region = adm1_name, 
+      market = mkt_name,
+      commodity_kg = cm_name,
+      month = mp_month,
+      year = mp_year,
+      price_rwf = mp_price
+    )
+  
+  tb_data <- tb_data |> 
+    mutate(ymd(paste(year, month, "01"))) |> 
+    select(-month, -year)
+}
+```
+
+To test our function, we attempt to import a new data set called pea_prices. The structure of the new data file is similar to the potatos data set, but the records belong to prices of peas.
+
+```{r Peas Data}
+pea_prices <- read_price_data("Peas+(fresh)")
+glimpse(pea_prices)
+```
+
+**Nice!**
+# 5. Plotting the price of potatoes
+A great first step in any data analysis is to look at the data. In this case, we have some prices, and we have some dates, so the obvious thing to do is to see how those prices change over time.
+
+```{r Prices Over Time Plot}
+potato_prices |> 
+  ggplot(aes(x = date, y = price_rwf, group = market)) + 
+  geom_line(alpha = 0.2) + 
+  labs(x = "Date", y = "Price", title = "Potato price over time")
+```
+
+# 6. What a lotta plots
 
 

@@ -2,3 +2,6 @@ pacman
 readr
 dplyr
 gt
+magrittr
+lubridate
+ggplot2
