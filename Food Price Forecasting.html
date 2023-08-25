@@ -84,6 +84,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#once-more-with-feeling" id="toc-once-more-with-feeling" class="nav-link" data-scroll-target="#once-more-with-feeling">2. Once more, with feeling</a></li>
   <li><a href="#spring-cleaning" id="toc-spring-cleaning" class="nav-link" data-scroll-target="#spring-cleaning">3. Spring cleaning</a></li>
   <li><a href="#potatoes-are-not-a-balanced-diet" id="toc-potatoes-are-not-a-balanced-diet" class="nav-link" data-scroll-target="#potatoes-are-not-a-balanced-diet">4. Potatoes are not a balanced diet</a></li>
+  <li><a href="#what-a-lotta-plots" id="toc-what-a-lotta-plots" class="nav-link" data-scroll-target="#what-a-lotta-plots">6. What a lotta plots</a></li>
+  <li><a href="#preparing-to-predict-the-future-part-1" id="toc-preparing-to-predict-the-future-part-1" class="nav-link" data-scroll-target="#preparing-to-predict-the-future-part-1">7. Preparing to predict the future (part 1)</a></li>
+  <li><a href="#preparing-to-predict-the-future-part-2" id="toc-preparing-to-predict-the-future-part-2" class="nav-link" data-scroll-target="#preparing-to-predict-the-future-part-2">8. Preparing to predict the future (part 2)</a></li>
   </ul>
 </nav>
 </div>
@@ -123,26 +126,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <p>In this quarto file, we’re going to import, manipulate, visualize and forecast Rwandan potato price data. We’ll also wrap our analysis into functions to make it easy to analyze prices of other foods.</p>
-<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Head of Data set_f06a7a69cc87d551786a737e7f818867">
+<div class="cell">
 <div class="cell-output-display">
 
-<div id="ationziaew" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ationziaew table {
+<div id="vdntutlojx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vdntutlojx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ationziaew thead, #ationziaew tbody, #ationziaew tfoot, #ationziaew tr, #ationziaew td, #ationziaew th {
+#vdntutlojx thead, #vdntutlojx tbody, #vdntutlojx tfoot, #vdntutlojx tr, #vdntutlojx td, #vdntutlojx th {
   border-style: none;
 }
 
-#ationziaew p {
+#vdntutlojx p {
   margin: 0;
   padding: 0;
 }
 
-#ationziaew .gt_table {
+#vdntutlojx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -168,12 +171,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#ationziaew .gt_caption {
+#vdntutlojx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ationziaew .gt_title {
+#vdntutlojx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -185,7 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#ationziaew .gt_subtitle {
+#vdntutlojx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -197,7 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#ationziaew .gt_heading {
+#vdntutlojx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -209,13 +212,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ationziaew .gt_bottom_border {
+#vdntutlojx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ationziaew .gt_col_headings {
+#vdntutlojx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -230,7 +233,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ationziaew .gt_col_heading {
+#vdntutlojx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -250,7 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ationziaew .gt_column_spanner_outer {
+#vdntutlojx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -262,15 +265,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#ationziaew .gt_column_spanner_outer:first-child {
+#vdntutlojx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ationziaew .gt_column_spanner_outer:last-child {
+#vdntutlojx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ationziaew .gt_column_spanner {
+#vdntutlojx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -282,11 +285,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#ationziaew .gt_spanner_row {
+#vdntutlojx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ationziaew .gt_group_heading {
+#vdntutlojx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -312,7 +315,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#ationziaew .gt_empty_group_heading {
+#vdntutlojx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -327,15 +330,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#ationziaew .gt_from_md > :first-child {
+#vdntutlojx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ationziaew .gt_from_md > :last-child {
+#vdntutlojx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ationziaew .gt_row {
+#vdntutlojx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -354,7 +357,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ationziaew .gt_stub {
+#vdntutlojx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -367,7 +370,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ationziaew .gt_stub_row_group {
+#vdntutlojx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -381,15 +384,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#ationziaew .gt_row_group_first td {
+#vdntutlojx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ationziaew .gt_row_group_first th {
+#vdntutlojx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ationziaew .gt_summary_row {
+#vdntutlojx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -399,16 +402,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ationziaew .gt_first_summary_row {
+#vdntutlojx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ationziaew .gt_first_summary_row.thick {
+#vdntutlojx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ationziaew .gt_last_summary_row {
+#vdntutlojx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -418,7 +421,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ationziaew .gt_grand_summary_row {
+#vdntutlojx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -428,7 +431,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ationziaew .gt_first_grand_summary_row {
+#vdntutlojx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -438,7 +441,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#ationziaew .gt_last_grand_summary_row_top {
+#vdntutlojx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -448,11 +451,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ationziaew .gt_striped {
+#vdntutlojx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ationziaew .gt_table_body {
+#vdntutlojx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -461,7 +464,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ationziaew .gt_footnotes {
+#vdntutlojx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -475,7 +478,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ationziaew .gt_footnote {
+#vdntutlojx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -484,7 +487,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ationziaew .gt_sourcenotes {
+#vdntutlojx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -498,7 +501,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ationziaew .gt_sourcenote {
+#vdntutlojx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -506,63 +509,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ationziaew .gt_left {
+#vdntutlojx .gt_left {
   text-align: left;
 }
 
-#ationziaew .gt_center {
+#vdntutlojx .gt_center {
   text-align: center;
 }
 
-#ationziaew .gt_right {
+#vdntutlojx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ationziaew .gt_font_normal {
+#vdntutlojx .gt_font_normal {
   font-weight: normal;
 }
 
-#ationziaew .gt_font_bold {
+#vdntutlojx .gt_font_bold {
   font-weight: bold;
 }
 
-#ationziaew .gt_font_italic {
+#vdntutlojx .gt_font_italic {
   font-style: italic;
 }
 
-#ationziaew .gt_super {
+#vdntutlojx .gt_super {
   font-size: 65%;
 }
 
-#ationziaew .gt_footnote_marks {
+#vdntutlojx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ationziaew .gt_asterisk {
+#vdntutlojx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ationziaew .gt_indent_1 {
+#vdntutlojx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ationziaew .gt_indent_2 {
+#vdntutlojx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ationziaew .gt_indent_3 {
+#vdntutlojx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ationziaew .gt_indent_4 {
+#vdntutlojx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ationziaew .gt_indent_5 {
+#vdntutlojx .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -712,7 +715,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Many of the columns in the potato data aren’t very useful for our analysis. For example, the adm1_name column is always “Rwanda”, and cur_name is always “RWF”. (This is short for Rwandan Franc; for context, 1000 RWF is a little over 1 USD.) Similarly, we don’t really need any of the ID columns or the data source.</p>
 <p>Even the columns we do need have slightly obscure names. For example, adm1_id isn’t as clear as region, and mkt_name isn’t as clear as market. One of the most types of data analysis disaster is to misunderstand what a variable means, so naming variable clearly is a useful way to avoid this. One trick is that any variable that includes a unit should include that unit in the variable name. Here, the prices are given in Rwandan Francs, so price_rwf is a good name.</p>
 <p>The new structure is as follows:</p>
-<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Glimpse_60c18e28e6c5d3ab427fcd53a9ae4aac">
+<div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 4,320
 Columns: 6
@@ -728,26 +731,26 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
 <section id="spring-cleaning" class="level1">
 <h1>3. Spring cleaning</h1>
 <p>As is often the case in a data analysis, the data we are given isn’t in quite the form we’d like it to be. For example, in the last task the month and year were given as integers. Since we’ll be performing some time series analysis, it would be helpful if they were provided as dates. Before we can analyze the data, we need to spring clean it.</p>
-<div class="cell" data-hash="Food-Price-Forecasting_cache/html/First Rows after Date Creation_db1b85f7ad32017c54f50ac4c9931309">
+<div class="cell">
 <div class="cell-output-display">
 
-<div id="xldsyvauvo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xldsyvauvo table {
+<div id="wsheaetthh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#wsheaetthh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xldsyvauvo thead, #xldsyvauvo tbody, #xldsyvauvo tfoot, #xldsyvauvo tr, #xldsyvauvo td, #xldsyvauvo th {
+#wsheaetthh thead, #wsheaetthh tbody, #wsheaetthh tfoot, #wsheaetthh tr, #wsheaetthh td, #wsheaetthh th {
   border-style: none;
 }
 
-#xldsyvauvo p {
+#wsheaetthh p {
   margin: 0;
   padding: 0;
 }
 
-#xldsyvauvo .gt_table {
+#wsheaetthh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -773,12 +776,12 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-left-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_caption {
+#wsheaetthh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xldsyvauvo .gt_title {
+#wsheaetthh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -790,7 +793,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-bottom-width: 0;
 }
 
-#xldsyvauvo .gt_subtitle {
+#wsheaetthh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -802,7 +805,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-top-width: 0;
 }
 
-#xldsyvauvo .gt_heading {
+#wsheaetthh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -814,13 +817,13 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-right-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_bottom_border {
+#wsheaetthh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_col_headings {
+#wsheaetthh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -835,7 +838,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-right-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_col_heading {
+#wsheaetthh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -855,7 +858,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   overflow-x: hidden;
 }
 
-#xldsyvauvo .gt_column_spanner_outer {
+#wsheaetthh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -867,15 +870,15 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   padding-right: 4px;
 }
 
-#xldsyvauvo .gt_column_spanner_outer:first-child {
+#wsheaetthh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xldsyvauvo .gt_column_spanner_outer:last-child {
+#wsheaetthh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xldsyvauvo .gt_column_spanner {
+#wsheaetthh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -887,11 +890,11 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   width: 100%;
 }
 
-#xldsyvauvo .gt_spanner_row {
+#wsheaetthh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xldsyvauvo .gt_group_heading {
+#wsheaetthh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -917,7 +920,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   text-align: left;
 }
 
-#xldsyvauvo .gt_empty_group_heading {
+#wsheaetthh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -932,15 +935,15 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   vertical-align: middle;
 }
 
-#xldsyvauvo .gt_from_md > :first-child {
+#wsheaetthh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xldsyvauvo .gt_from_md > :last-child {
+#wsheaetthh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xldsyvauvo .gt_row {
+#wsheaetthh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -959,7 +962,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   overflow-x: hidden;
 }
 
-#xldsyvauvo .gt_stub {
+#wsheaetthh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -972,7 +975,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   padding-right: 5px;
 }
 
-#xldsyvauvo .gt_stub_row_group {
+#wsheaetthh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -986,15 +989,15 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   vertical-align: top;
 }
 
-#xldsyvauvo .gt_row_group_first td {
+#wsheaetthh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xldsyvauvo .gt_row_group_first th {
+#wsheaetthh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xldsyvauvo .gt_summary_row {
+#wsheaetthh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1004,16 +1007,16 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   padding-right: 5px;
 }
 
-#xldsyvauvo .gt_first_summary_row {
+#wsheaetthh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_first_summary_row.thick {
+#wsheaetthh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xldsyvauvo .gt_last_summary_row {
+#wsheaetthh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1023,7 +1026,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-bottom-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_grand_summary_row {
+#wsheaetthh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1033,7 +1036,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   padding-right: 5px;
 }
 
-#xldsyvauvo .gt_first_grand_summary_row {
+#wsheaetthh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1043,7 +1046,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-top-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_last_grand_summary_row_top {
+#wsheaetthh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1053,11 +1056,11 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-bottom-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_striped {
+#wsheaetthh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xldsyvauvo .gt_table_body {
+#wsheaetthh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1066,7 +1069,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-bottom-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_footnotes {
+#wsheaetthh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1080,7 +1083,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-right-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_footnote {
+#wsheaetthh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1089,7 +1092,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   padding-right: 5px;
 }
 
-#xldsyvauvo .gt_sourcenotes {
+#wsheaetthh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1103,7 +1106,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   border-right-color: #D3D3D3;
 }
 
-#xldsyvauvo .gt_sourcenote {
+#wsheaetthh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1111,63 +1114,63 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
   padding-right: 5px;
 }
 
-#xldsyvauvo .gt_left {
+#wsheaetthh .gt_left {
   text-align: left;
 }
 
-#xldsyvauvo .gt_center {
+#wsheaetthh .gt_center {
   text-align: center;
 }
 
-#xldsyvauvo .gt_right {
+#wsheaetthh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xldsyvauvo .gt_font_normal {
+#wsheaetthh .gt_font_normal {
   font-weight: normal;
 }
 
-#xldsyvauvo .gt_font_bold {
+#wsheaetthh .gt_font_bold {
   font-weight: bold;
 }
 
-#xldsyvauvo .gt_font_italic {
+#wsheaetthh .gt_font_italic {
   font-style: italic;
 }
 
-#xldsyvauvo .gt_super {
+#wsheaetthh .gt_super {
   font-size: 65%;
 }
 
-#xldsyvauvo .gt_footnote_marks {
+#wsheaetthh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xldsyvauvo .gt_asterisk {
+#wsheaetthh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xldsyvauvo .gt_indent_1 {
+#wsheaetthh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xldsyvauvo .gt_indent_2 {
+#wsheaetthh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xldsyvauvo .gt_indent_3 {
+#wsheaetthh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xldsyvauvo .gt_indent_4 {
+#wsheaetthh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xldsyvauvo .gt_indent_5 {
+#wsheaetthh .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1220,7 +1223,7 @@ $ price_rwf    &lt;dbl&gt; 157.0000, 133.3333, 96.5000, 97.0000, 107.8000, 125.5
 </div>
 </div>
 </div>
-<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Glimpse after Date Creation_c9f32dd79ea031dc9442409cc05033f0">
+<div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 4,320
 Columns: 5
@@ -1239,23 +1242,537 @@ $ date         &lt;date&gt; 2010-11-01, 2010-12-01, 2011-01-01, 2011-02-01, 2011
 <p>If we want to do a similar task many times, we could just cut and paste our code and change bits here and there. This is a terrible idea, since changing code in one place doesn’t keep it up to date in the other places, and we quickly end up with lots of bugs.</p>
 <p>A better idea is to write a function. That way we avoid cut and paste errors and can have more readable code.</p>
 <p>To test our function, we attempt to import a new data set called pea_prices. The structure of the new data file is similar to the potatos data set, but the records belong to prices of peas.</p>
-<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Peas Data_b1e970fc9211eb1ab0f6e77ead12a9d1">
+<div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 1,893
 Columns: 5
-$ region                          &lt;chr&gt; "$West/Iburengerazuba", "$West/Ibureng…
-$ market                          &lt;chr&gt; "Birambo", "Birambo", "Birambo", "Bira…
-$ commodity_kg                    &lt;chr&gt; "Peas (fresh)", "Peas (fresh)", "Peas …
-$ price_rwf                       &lt;dbl&gt; 403.5000, 380.0000, 277.5000, 450.0000…
-$ `ymd(paste(year, month, "01"))` &lt;date&gt; 2011-01-01, 2011-02-01, 2011-04-01, 2…</code></pre>
+$ region       &lt;chr&gt; "$West/Iburengerazuba", "$West/Iburengerazuba", "$West/Ib…
+$ market       &lt;chr&gt; "Birambo", "Birambo", "Birambo", "Birambo", "Birambo", "B…
+$ commodity_kg &lt;chr&gt; "Peas (fresh)", "Peas (fresh)", "Peas (fresh)", "Peas (fr…
+$ price_rwf    &lt;dbl&gt; 403.5000, 380.0000, 277.5000, 450.0000, 450.0000, 375.000…
+$ date         &lt;date&gt; 2011-01-01, 2011-02-01, 2011-04-01, 2011-05-01, 2011-06-…</code></pre>
 </div>
 </div>
 <p><strong>Nice!</strong> # 5. Plotting the price of potatoes A great first step in any data analysis is to look at the data. In this case, we have some prices, and we have some dates, so the obvious thing to do is to see how those prices change over time.</p>
-<div class="cell" data-hash="Food-Price-Forecasting_cache/html/Prices Over Time Plot_a423c8ee5beb357284c524baa047e527">
+<div class="cell">
 <div class="cell-output-display">
-<p><img src="Food-Price-Forecasting_files/figure-html/Prices%20Over%20Time%20Plot-1.png" class="img-fluid" width="672"></p>
+<p><img src="Food-Price-Forecasting_files/figure-html/Potato%20Prices%20Over%20Time%20Plot-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+</section>
+<section id="what-a-lotta-plots" class="level1">
+<h1>6. What a lotta plots</h1>
+<p>There is a bit of a trend in the potato prices, with them increasing until 2013, after which they level off. More striking though is the seasonality: the prices are lowest around December and January, and have a peak around August. Some years also show a second peak around April or May.</p>
+<p>Just as with the importing and cleaning code, if we want to make lots of similar plots, we need to wrap the plotting code into a function.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Food-Price-Forecasting_files/figure-html/Peas%20Data%20Plot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="preparing-to-predict-the-future-part-1" class="level1">
+<h1>7. Preparing to predict the future (part 1)</h1>
+<p>While it’s useful to see how the prices have changed in the past, what’s more exciting is to forecast how they will change in the future. Before we get to that, there are some data preparation steps that need to be performed.</p>
+<p>The datasets for each commodity are very rich: rather than being a single time series, they consist of a time series for each market. The fancy way of analyzing these is to treat them as a single hierarchical time series. The easier way, that we’ll try here, is to take the average price across markets at each time and analyze the resulting single time series.</p>
+<p>Looking at the plots from the potato and pea datasets, we can see that occasionally there is a big spike in the price. That probably indicates a logistic problem where that food wasn’t easily available at a particular market, or the buyer looked like a tourist and got ripped off. The consequence of these outliers is that it is a bad idea to use the mean price of each time point: instead, the median makes more sense since it is robust against outliers.</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="qgdfynlnqn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qgdfynlnqn table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qgdfynlnqn thead, #qgdfynlnqn tbody, #qgdfynlnqn tfoot, #qgdfynlnqn tr, #qgdfynlnqn td, #qgdfynlnqn th {
+  border-style: none;
+}
+
+#qgdfynlnqn p {
+  margin: 0;
+  padding: 0;
+}
+
+#qgdfynlnqn .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#qgdfynlnqn .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qgdfynlnqn .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qgdfynlnqn .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qgdfynlnqn .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qgdfynlnqn .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qgdfynlnqn .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qgdfynlnqn .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qgdfynlnqn .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#qgdfynlnqn .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#qgdfynlnqn .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qgdfynlnqn .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qgdfynlnqn .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qgdfynlnqn .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qgdfynlnqn .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qgdfynlnqn .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#qgdfynlnqn .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#qgdfynlnqn .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#qgdfynlnqn .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qgdfynlnqn .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#qgdfynlnqn .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qgdfynlnqn .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qgdfynlnqn .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qgdfynlnqn .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qgdfynlnqn .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qgdfynlnqn .gt_left {
+  text-align: left;
+}
+
+#qgdfynlnqn .gt_center {
+  text-align: center;
+}
+
+#qgdfynlnqn .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qgdfynlnqn .gt_font_normal {
+  font-weight: normal;
+}
+
+#qgdfynlnqn .gt_font_bold {
+  font-weight: bold;
+}
+
+#qgdfynlnqn .gt_font_italic {
+  font-style: italic;
+}
+
+#qgdfynlnqn .gt_super {
+  font-size: 65%;
+}
+
+#qgdfynlnqn .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#qgdfynlnqn .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#qgdfynlnqn .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#qgdfynlnqn .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#qgdfynlnqn .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#qgdfynlnqn .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#qgdfynlnqn .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="region">region</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="commodity_kg">commodity_kg</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="price_rwf">price_rwf</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="date">date</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="price_med">price_med</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr class="gt_group_heading_row">
+      <th colspan="5" class="gt_group_heading" scope="colgroup" id="Birambo">Birambo</th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="Birambo  region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="Birambo  commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="Birambo  price_rwf" class="gt_row gt_right">157.0000</td>
+<td headers="Birambo  date" class="gt_row gt_right">2010-11-01</td>
+<td headers="Birambo  price_med" class="gt_row gt_right">159.5</td></tr>
+    <tr><td headers="Birambo  region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="Birambo  commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="Birambo  price_rwf" class="gt_row gt_right">133.3333</td>
+<td headers="Birambo  date" class="gt_row gt_right">2010-12-01</td>
+<td headers="Birambo  price_med" class="gt_row gt_right">159.5</td></tr>
+    <tr><td headers="Birambo  region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="Birambo  commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="Birambo  price_rwf" class="gt_row gt_right">96.5000</td>
+<td headers="Birambo  date" class="gt_row gt_right">2011-01-01</td>
+<td headers="Birambo  price_med" class="gt_row gt_right">159.5</td></tr>
+    <tr><td headers="Birambo  region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="Birambo  commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="Birambo  price_rwf" class="gt_row gt_right">97.0000</td>
+<td headers="Birambo  date" class="gt_row gt_right">2011-02-01</td>
+<td headers="Birambo  price_med" class="gt_row gt_right">159.5</td></tr>
+    <tr><td headers="Birambo  region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="Birambo  commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="Birambo  price_rwf" class="gt_row gt_right">107.8000</td>
+<td headers="Birambo  date" class="gt_row gt_right">2011-03-01</td>
+<td headers="Birambo  price_med" class="gt_row gt_right">159.5</td></tr>
+    <tr><td headers="Birambo  region" class="gt_row gt_left">$West/Iburengerazuba</td>
+<td headers="Birambo  commodity_kg" class="gt_row gt_left">Potatoes (Irish)</td>
+<td headers="Birambo  price_rwf" class="gt_row gt_right">125.5000</td>
+<td headers="Birambo  date" class="gt_row gt_right">2011-04-01</td>
+<td headers="Birambo  price_med" class="gt_row gt_right">159.5</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="preparing-to-predict-the-future-part-2" class="level1">
+<h1>8. Preparing to predict the future (part 2)</h1>
 <!-- -->
 
 </section>
@@ -1552,7 +2069,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: false</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">  cache: true</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">  cache: false</span></span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="an">theme:</span><span class="co"> theme.scss</span></span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
@@ -1662,7 +2179,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a>  tb_data <span class="ot">&lt;-</span> tb_data <span class="sc">|&gt;</span> </span>
-<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="fu">ymd</span>(<span class="fu">paste</span>(year, month, <span class="st">"01"</span>))) <span class="sc">|&gt;</span> </span>
+<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">date =</span> <span class="fu">ymd</span>(<span class="fu">paste</span>(year, month, <span class="st">"01"</span>))) <span class="sc">|&gt;</span> </span>
 <span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>month, <span class="sc">-</span>year)</span>
 <span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1678,12 +2195,53 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a><span class="fu"># 5. Plotting the price of potatoes</span></span>
 <span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a>A great first step in any data analysis is to look at the data. In this case, we have some prices, and we have some dates, so the obvious thing to do is to see how those prices change over time.</span>
 <span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Prices Over Time Plot}</span></span>
+<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Potato Prices Over Time Plot}</span></span>
 <span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a>potato_prices <span class="sc">|&gt;</span> </span>
 <span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> price_rwf, <span class="at">group =</span> market)) <span class="sc">+</span> </span>
-<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span> </span>
+<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
 <span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, <span class="at">y =</span> <span class="st">"Price"</span>, <span class="at">title =</span> <span class="st">"Potato price over time"</span>)</span>
-<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-139"><a href="#cb4-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-140"><a href="#cb4-140" aria-hidden="true" tabindex="-1"></a><span class="fu"># 6. What a lotta plots</span></span>
+<span id="cb4-141"><a href="#cb4-141" aria-hidden="true" tabindex="-1"></a>There is a bit of a trend in the potato prices, with them increasing until 2013, after which they level off. More striking though is the seasonality: the prices are lowest around December and January, and have a peak around August. Some years also show a second peak around April or May.</span>
+<span id="cb4-142"><a href="#cb4-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-143"><a href="#cb4-143" aria-hidden="true" tabindex="-1"></a>Just as with the importing and cleaning code, if we want to make lots of similar plots, we need to wrap the plotting code into a function.</span>
+<span id="cb4-144"><a href="#cb4-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-145"><a href="#cb4-145" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Plot Function}</span></span>
+<span id="cb4-146"><a href="#cb4-146" aria-hidden="true" tabindex="-1"></a>plot_price_vs_time <span class="ot">&lt;-</span> <span class="cf">function</span>(prices, commodity) {</span>
+<span id="cb4-147"><a href="#cb4-147" aria-hidden="true" tabindex="-1"></a>  prices <span class="sc">|&gt;</span>  </span>
+<span id="cb4-148"><a href="#cb4-148" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(date, price_rwf, <span class="at">group =</span> market)) <span class="sc">+</span></span>
+<span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste</span>(commodity ,<span class="st">"price over time"</span>, <span class="at">sep =</span> <span class="st">" "</span>),</span>
+<span id="cb4-151"><a href="#cb4-151" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Date"</span>,</span>
+<span id="cb4-152"><a href="#cb4-152" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Price"</span>)</span>
+<span id="cb4-153"><a href="#cb4-153" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-154"><a href="#cb4-154" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-155"><a href="#cb4-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Peas Data Plot}</span></span>
+<span id="cb4-157"><a href="#cb4-157" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_price_vs_time</span>(pea_prices, <span class="st">"Pea"</span>)</span>
+<span id="cb4-158"><a href="#cb4-158" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-159"><a href="#cb4-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-160"><a href="#cb4-160" aria-hidden="true" tabindex="-1"></a><span class="fu"># 7. Preparing to predict the future (part 1)</span></span>
+<span id="cb4-161"><a href="#cb4-161" aria-hidden="true" tabindex="-1"></a>While it's useful to see how the prices have changed in the past, what's more exciting is to forecast how they will change in the future. Before we get to that, there are some data preparation steps that need to be performed.</span>
+<span id="cb4-162"><a href="#cb4-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-163"><a href="#cb4-163" aria-hidden="true" tabindex="-1"></a>The datasets for each commodity are very rich: rather than being a single time series, they consist of a time series for each market. The fancy way of analyzing these is to treat them as a single hierarchical time series. The easier way, that we'll try here, is to take the average price across markets at each time and analyze the resulting single time series.</span>
+<span id="cb4-164"><a href="#cb4-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-165"><a href="#cb4-165" aria-hidden="true" tabindex="-1"></a>Looking at the plots from the potato and pea datasets, we can see that occasionally there is a big spike in the price. That probably indicates a logistic problem where that food wasn't easily available at a particular market, or the buyer looked like a tourist and got ripped off. The consequence of these outliers is that it is a bad idea to use the mean price of each time point: instead, the median makes more sense since it is robust against outliers.</span>
+<span id="cb4-166"><a href="#cb4-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-167"><a href="#cb4-167" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Median of Each Market}</span></span>
+<span id="cb4-168"><a href="#cb4-168" aria-hidden="true" tabindex="-1"></a>potato_prices_summarized <span class="ot">&lt;-</span> potato_prices <span class="sc">|&gt;</span> </span>
+<span id="cb4-169"><a href="#cb4-169" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(market) <span class="sc">|&gt;</span> </span>
+<span id="cb4-170"><a href="#cb4-170" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">price_med =</span> <span class="fu">median</span>(price_rwf))</span>
+<span id="cb4-171"><a href="#cb4-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-172"><a href="#cb4-172" aria-hidden="true" tabindex="-1"></a>potato_prices_summarized <span class="sc">|&gt;</span> </span>
+<span id="cb4-173"><a href="#cb4-173" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb4-174"><a href="#cb4-174" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span>
+<span id="cb4-175"><a href="#cb4-175" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-176"><a href="#cb4-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-177"><a href="#cb4-177" aria-hidden="true" tabindex="-1"></a><span class="fu"># 8. Preparing to predict the future (part 2)</span></span>
+<span id="cb4-178"><a href="#cb4-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-179"><a href="#cb4-179" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

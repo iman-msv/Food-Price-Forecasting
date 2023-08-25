@@ -3,7 +3,7 @@
     "path": "~/Documents/Iman/Projects/Food Price Forecasting/Food Price Forecasting.qmd",
     "project_path": "Food Price Forecasting.qmd",
     "type": "quarto_markdown",
-    "hash": "3391030419",
+    "hash": "4230052757",
     "contents": "",
     "dirty": false,
     "created": 1692611921649.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "140,0",
-        "scrollLine": "126"
+        "cursorPosition": "185,43",
+        "scrollLine": "174"
     },
     "folds": "",
-    "lastKnownWriteTime": 1692960387,
+    "lastKnownWriteTime": 1692990750,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1692960387806,
+    "last_content_update": 1692990750918,
     "read_only": false,
     "read_only_alternatives": []
 }
