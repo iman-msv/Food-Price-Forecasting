@@ -30,7 +30,7 @@ if (!require(pacman)) {
   library(pacman)
 }
 
-p_load(readr, dplyr, lubridate, magrittr, ggplot2, gt)
+p_load(readr, dplyr, forecast, lubridate, magrittr, ggplot2, gt)
 ```
 
 ```{r Data Import}
@@ -116,6 +116,8 @@ read_price_data <- function(commodity) {
   tb_data <- tb_data |> 
     mutate(date = ymd(paste(year, month, "01"))) |> 
     select(-month, -year)
+  
+  return(tb_data)
 }
 ```
 
@@ -126,7 +128,6 @@ pea_prices <- read_price_data("Peas+(fresh)")
 glimpse(pea_prices)
 ```
 
-**Nice!**
 # 5. Plotting the price of potatoes
 A great first step in any data analysis is to look at the data. In this case, we have some prices, and we have some dates, so the obvious thing to do is to see how those prices change over time.
 
@@ -147,9 +148,11 @@ plot_price_vs_time <- function(prices, commodity) {
   prices |>  
   ggplot(aes(date, price_rwf, group = market)) +
   geom_line(alpha = 0.2) +
-  labs(title = paste(commodity ,"price over time", sep = " "),
-       x = "Date",
-       y = "Price")
+  labs(
+    title = paste(commodity ,"price over time", sep = " "),
+    x = "Date",
+    y = "Price"
+  )
 }
 ```
 
@@ -166,8 +169,8 @@ Looking at the plots from the potato and pea datasets, we can see that occasiona
 
 ```{r Median of Each Market}
 potato_prices_summarized <- potato_prices |> 
-  group_by(market) |> 
-  mutate(price_med = median(price_rwf))
+  group_by(date) |> 
+  summarize(price_med = median(price_rwf))
 
 potato_prices_summarized |> 
   head() |> 
@@ -178,11 +181,84 @@ potato_prices_summarized |>
 Time series analysis in R is at a crossroads. The best and most mature tools for analysis are based around a time series data type called ts, which predates the tidyverse by several decades. That means that we have to do one more data preparation step before we can start forecasting: we need to convert our summarized dataset into a ts object.
 
 ```{r ts Object}
-potato_time_series <- ts(potato_prices_summarized, 
-                         start = c("2008", "01"), end = "2015",
-                         frequency = 12)
+potato_time_series <- potato_prices_summarized %$% 
+  ts(
+    price_med, 
+    start = c(year(min(date)), month(min(date))), 
+    end   = c(year(max(date)), month(max(date))), 
+    frequency = 12
+  )
 ```
 
 # 9. Another day, another function to write
+Those data preparation steps were tricky! Wouldn't it be really nice if we never had to write them again? Well, if we wrap that code into a function, then we won't have to.
+
+```{r Data Preparation Function}
+create_price_time_series <- function(prices) {
+  prices_summarized <- prices |> 
+  group_by(date) |> 
+  summarize(median_price_rwf = median(price_rwf))
+  
+  time_series <- prices_summarized %$% 
+    ts(
+      median_price_rwf, 
+      start = c(year(min(date)), month(min(date))), 
+      end   = c(year(max(date)), month(max(date))), 
+      frequency = 12
+    )
+  
+  return(time_series)
+}
+```
+
+```{r Peas ts}
+pea_ts <- create_price_time_series(pea_prices)
+```
+
+# 10. The future of potato prices
+All the preparation is done and we are ready to start forecasting. One question we might ask is "how do I know if I can trust our forecast?". Recall that both the potato and the pea data had strong seasonality (for example, potatoes were most expensive around August and cheapest around December). For agricultural data, a good forecast should show a similar shape throughout the seasons.
+
+Now then, are we ready to see the future?
+
+```{r Forecast Function on Potato}
+potato_price_forecast <- forecast(potato_time_series)
+potato_price_forecast
+```
+
+```{r Forecast Potato Plot}
+autoplot(potato_price_forecast, main = "Potato price forecast") + 
+  scale_x_continuous(breaks = seq(2008, 2018))
+```
+
+# 11. The final function
+Nice! The forecast shows the spike in potato prices in late summer and the dip toward the end of the year.
+
+With this analysis step, just as the previous steps, to make things repeatable, we need to wrap the code into a function.
+
+```{r Custom Forecast Function}
+plot_price_forecast <- function(time_series, commodity) {
+  price_forecast <- forecast(time_series)
+  autoplot(price_forecast, main = paste(commodity, "price forecast"))
+}
+```
+
+```{r Pea Test Custom Forecast}
+plot_price_forecast(pea_ts, "Pea")
+```
+
+# 12. Do it all over again
+That was a lot of effort writing all that code to analyze the potato data. Fortunately, since we wrapped all the code into functions, we can easily take a look at any other food type.
+
+```{r The Whole Process for Beans}
+beans <- read_price_data("Beans (dry)")
+plot_price_vs_time(beans, "Beans")
+beans_ts <- create_price_time_series(beans)
+plot_price_forecast(beans_ts, "Beans")
+```
+
+
+
+
+
 
 
